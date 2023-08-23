@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Users\UserController;
 use App\Http\Controllers\Front\FrontController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Products\ProductController;
@@ -37,6 +38,10 @@ Route::group(['middleware' =>['auth', 'PreventBackHistory']], function(){
 
     
     Route::get('/products', [ProductController::class, 'index'])->name('products');
+    Route::get('/users', [UserController::class, 'index'])->name('users');
+    Route::get('/create-user', [UserController::class, 'create'])->name('create-user');
+    Route::post('/user-create', [UserController::class, 'createUser'])->name('user-create');
+    //
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

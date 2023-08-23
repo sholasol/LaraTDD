@@ -27,14 +27,22 @@
       <script src="http://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="http://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
       <![endif]-->
+    <style>
+    .my-div {
+        background-image: url('assets/images/bg1.jpg');
+        background-size: cover;
+    }
+    </style>
 </head>
 
 <body>
     <!--================================-->
     <!-- User Singin Start -->
     <!--================================-->
-    <div class="ht-100v d-flex">
-        @yield('content')
+    <div class="my-div">
+        <div class="ht-100v d-flex">
+            @yield('content')
+        </div>
     </div>
     <!--/ User Singin End -->
     <!--================================-->

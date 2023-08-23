@@ -41,6 +41,14 @@
                     </ul>
                 </li>
                 <li>
+                    <a href=""><i data-feather="users"></i>
+                        <span>Users</span><i class="accordion-icon fa fa-angle-left"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="{{ route('users') }}">Users</a></li>
+                        <li><a href="{{ route('create-user') }}">Create User</a></li>
+                    </ul>
+                </li>
+                <li>
                     <a href=""><i data-feather="gift"></i>
                         <span>Icons</span><i class="accordion-icon fa fa-angle-left"></i></a>
                     <ul class="sub-menu">

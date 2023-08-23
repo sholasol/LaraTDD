@@ -23,6 +23,8 @@
     <link type="text/css" rel="stylesheet" href="assets/plugins/apex-chart/apexcharts.css">
     <link type="text/css" rel="stylesheet" href="assets/css/app.min.css" />
     <link type="text/css" rel="stylesheet" href="assets/css/style.min.css" />
+    <link type="text/css" rel="stylesheet" href="assets/plugins/datatables/jquery.dataTables.min.css">
+    <link type="text/css" rel="stylesheet" href="assets/plugins/datatables/extensions/dataTables.jqueryui.min.css">
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -248,7 +250,7 @@
     <script src="assets/plugins/feather-icon/feather.min.js"></script>
     <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/plugins/pace/pace.min.js"></script>
-    <script src="assets/plugins/toastr/toastr.min.js"></script>
+    <!-- <script src="assets/plugins/toastr/toastr.min.js"></script> -->
     <script src="assets/plugins/countup/counterup.min.js"></script>
     <script src="assets/plugins/waypoints/waypoints.min.js"></script>
     <script src="assets/plugins/chartjs/chartjs.js"></script>
@@ -258,8 +260,44 @@
     <script src="assets/js/dashboard/sales-dashboard-init.js"></script>
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/highlight.min.js"></script>
+    <script src="assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="assets/plugins/datatables/responsive/dataTables.responsive.js"></script>
+    <script src="assets/plugins/datatables/extensions/dataTables.jqueryui.min.js"></script>
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
+
+    <script>
+    // Basic DataTable	
+    $('#basicDataTable').DataTable({
+        responsive: true,
+        language: {
+            searchPlaceholder: 'Search...',
+            sSearch: ''
+        }
+    });
+
+
+    // Hoverable DataTable	
+    $('#hoverTable').DataTable({
+        responsive: true,
+        language: {
+            searchPlaceholder: 'Search...',
+            sSearch: ''
+        }
+    });
+
+    // Hoverable DataTable	
+    $('#orderActiveTable').DataTable({
+        responsive: true,
+        language: {
+            searchPlaceholder: 'Search...',
+            sSearch: ''
+        },
+        "order": [
+            [1, "desc"]
+        ]
+    });
+    </script>
 </body>
 
 </html>
