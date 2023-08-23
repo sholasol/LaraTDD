@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Front\FrontController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Products\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -33,6 +34,9 @@ Route::middleware(['middleware' => 'PreventBackHistory'])->group(function() {
 
 Route::group(['middleware' =>['auth', 'PreventBackHistory']], function(){
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
+
+    
+    Route::get('/products', [ProductController::class, 'index'])->name('products');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -5,6 +5,11 @@
 <div class="card shadow-none pd-20 mx-auto wd-300 text-center bd-1 align-self-center">
     <h4 class="card-title mt-3 text-center">Sing In</h4>
     <p class="text-center">Sing in to your account</p>
+    @if(Session::has('success'))
+    <div class="alert alert-success text-center">
+        {{Session::get('success')}}
+    </div>
+    @endif
     <p>
         <a href="" class="btn btn-block btn-twitter tx-13 hover-white"> <i class="fa fa-twitter"></i> Login via
             Twitter</a>

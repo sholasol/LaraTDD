@@ -34,20 +34,10 @@
                 <li class="mg-20-force menu-elements">Elements</li>
                 <li>
                     <a href=""><i data-feather="grid"></i>
-                        <span>UI Elements</span><i class="accordion-icon fa fa-angle-left"></i></a>
+                        <span>Products</span><i class="accordion-icon fa fa-angle-left"></i></a>
                     <ul class="sub-menu">
-                        <li><a href="ui-card.html">Card</a></li>
+                        <li><a href="/products">Products</a></li>
                         <li><a href="ui-alert.html">Alerts</a></li>
-                        <li><a href="ui-button.html">Buttons</a></li>
-                        <li><a href="ui-badge.html">Badges</a></li>
-                        <li><a href="ui-typography.html">Typography</a></li>
-                        <li><a href="ui-notification.html">Notifications</a></li>
-                        <li><a href="ui-modal.html">Modals</a></li>
-                        <li><a href="ui-tooltip.html">Tooltips</a></li>
-                        <li><a href="ui-progress.html">Progress</a></li>
-                        <li><a href="ui-spinner.html">Spinners</a></li>
-                        <li><a href="ui-accordion.html">Accordions</a></li>
-                        <li><a href="ui-pagination.html">Pagination</a></li>
                     </ul>
                 </li>
                 <li>
