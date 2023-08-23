@@ -13,7 +13,7 @@
         <div class="page-sidebar-menu">
             <ul class="accordion-menu">
                 <li class="active">
-                    <a href="{{ route('dashboard') }}"><i data-feather="home"></i>
+                    <a href="{{ route('admin.dashboard') }}"><i data-feather="home"></i>
                         <span>Dashboard</span></a>
                 </li>
 

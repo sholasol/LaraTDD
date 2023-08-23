@@ -43,6 +43,12 @@
         </div>
         <div class="form-group input-group">
             <div class="input-group-prepend">
+                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
+            </div>
+            <input name="phone" class="form-control form-control-sm" placeholder="Phone number" type="text">
+        </div>
+        <div class="form-group input-group">
+            <div class="input-group-prepend">
                 <span class="input-group-text pd-x-9"> <i class="fa fa-envelope"></i> </span>
             </div>
             <input name="email" class="form-control form-control-sm @error('email') is-invalid @enderror"
@@ -65,13 +71,6 @@
             </span>
             @enderror
         </div>
-        <div class="form-group input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-            </div>
-            <input name="phone" class="form-control form-control-sm" placeholder="Phone number" type="text">
-        </div>
-
         <div class="form-group input-group">
             <div class="input-group-prepend">
                 <span class="input-group-text"> <i class="fa fa-lock"></i> </span>

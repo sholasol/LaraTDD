@@ -32,7 +32,7 @@ Route::middleware(['middleware' => 'PreventBackHistory'])->group(function() {
 
 
 Route::group(['middleware' =>['auth', 'PreventBackHistory']], function(){
-    Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 });
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

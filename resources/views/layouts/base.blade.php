@@ -47,6 +47,11 @@
     <script src="assets/plugins/pace/pace.min.js"></script>
     <script src="assets/js/jquery.slimscroll.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
 </body>
+
+
 
 </html>
