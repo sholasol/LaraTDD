@@ -182,21 +182,17 @@
     <!-- Sidebar Footer Start -->
     <!--================================-->
     <div class="sidebar-footer">
-        <a class="pull-left" href="page-profile.html" data-toggle="tooltip" data-placement="top"
-            data-original-title="Profile">
+        <a class="pull-left" href="page-profile.html" data-toggle="tooltip" data-placement="top" data-original-title="Profile">
             <i data-feather="user" class="ht-15"></i></a>
-        <a class="pull-left " href="mailbox.html" data-toggle="tooltip" data-placement="top"
-            data-original-title="Mailbox">
+        <a class="pull-left " href="mailbox.html" data-toggle="tooltip" data-placement="top" data-original-title="Mailbox">
             <i data-feather="mail" class="ht-15"></i></a>
-        <a class="pull-left" href="page-unlock.html" data-toggle="tooltip" data-placement="top"
-            data-original-title="Lockscreen">
+        <a class="pull-left" href="page-unlock.html" data-toggle="tooltip" data-placement="top" data-original-title="Lockscreen">
             <i data-feather="lock" class="ht-15"></i></a>
         <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
             @csrf
         </form>
         <a class="pull-left" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"
-            data-toggle="tooltip" data-placement="top" data-original-title="Sing Out">
+                                                     document.getElementById('logout-form').submit();" data-toggle="tooltip" data-placement="top" data-original-title="Sing Out">
             <i data-feather="log-out" class="ht-15"></i></a>
     </div>
     <!--/ Sidebar Footer End -->

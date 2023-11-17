@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Users\UserController;
 use App\Http\Controllers\Front\FrontController;
@@ -27,16 +28,16 @@ Route::get('signup', [FrontController::class, 'signup'])->name('signup');
 //Auth::routes();
 
 //Prevent logged in user from access login or Auth pages
-Route::middleware(['middleware' => 'PreventBackHistory'])->group(function() {
+Route::middleware(['middleware' => 'PreventBackHistory'])->group(function () {
     Auth::routes();
 });
 
 
 
-Route::group(['middleware' =>['auth', 'PreventBackHistory']], function(){
+Route::group(['middleware' => ['auth', 'PreventBackHistory']], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('admin.dashboard');
 
-    
+
     Route::get('/products', [ProductController::class, 'index'])->name('products');
     Route::get('/users', [UserController::class, 'index'])->name('users');
     Route::get('/create-user', [UserController::class, 'create'])->name('create-user');
